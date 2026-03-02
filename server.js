@@ -15,6 +15,7 @@ app.use(express.json())
 
 connectDB()
 
+app.get('/', (req, res) => res.send("API is working fine"));
 app.use("/auth",authRoutes)
 // app.use("/generate",generateRoutes)
 // app.use("/history",historyRoutes)
